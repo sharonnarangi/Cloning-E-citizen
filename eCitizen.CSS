@@ -1,171 +1,295 @@
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-size: 18px;
-}
-#main-logo{
+    margin: 0;
+  }
+  #main-logo {
     height: 62px;
-}
-header{
+  }
+  header {
     display: flex;
-    padding: 20px;
     align-items: center;
     justify-content: space-between;
-}
-nav{
+    padding: 20px;
+  }
+  nav {
     display: flex;
-    color: rgba(107, 114, 128 );
     align-items: center;
-}
-ul{
+    color: rgb(107, 114, 128);
+  }
+  ul {
     list-style: none;
     padding: 0;
     display: flex;
     align-items: center;
-}
-nav a{
+  }
+  
+  nav a {
     color: inherit;
     text-decoration: none;
     padding: 8px;
     transition: all 0.3s linear;
-}
-nav a:hover{
+  }
+  nav a:hover {
     color: black;
-}
-nav button{
+  }
+  nav button {
     border: none;
     background: none;
     border-radius: 15px;
     padding: 7px 12px;
     transition: all 0.3s linear;
-}
-nav button:hover{
+  }
+  nav button:hover {
     cursor: pointer;
     background-color: aliceblue;
-
-}
-.signin-link{background-color: white;
+  }
+  
+  .signin-link {
+    background-color: white;
     color: black;
     font-size: 15px;
     padding: 7px 13px;
     border-radius: 19px;
-    
-
-}
-.register-link{background-color:rgb(20, 176, 76);
+  }
+  .register-link {
+    background-color: rgb(20, 176, 76);
     color: white;
     font-size: 15px;
     padding: 7px 13px;
     border-radius: 19px;
-}
-.register-link:hover{
+  }
+  .register-link:hover {
     color: white;
     background-color: rgb(15, 139, 60);
-}
-.accessibility-nav ion-icon{
-    color:rgb(52, 130,255);
+  }
+  .accessibility-nav ion-icon {
+    color: rgb(52, 130, 255);
     font-size: 22px;
-}
-.accessibility-nav button:hover{background-color: transparent;
-
-}
-#mobile-menu-btn{
+  }
+  .accessibility-nav button:hover {
+    background-color: transparent;
+  }
+  
+  #mobile-menu-btn {
     display: none;
-}
-#mobile-logo{
+  }
+  #mobile-logo {
     display: none;
-}
-.hero{
-    background-image: url(images/eCitizen-hero-banner-1.jpg);
+  }
+  
+  /* main */
+  .hero {
+    background-image: url("./images/eCitizen-hero-banner-7.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     padding-top: 80px;
     padding-left: 30px;
     padding-right: 30px;
-}
-.hero > div{
-    background-color:rgb(0, 0, 0, 0.2);
-    backdrop-filter:blur(5px);
+  }
+  .hero > div {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
     padding: 30px 18px 50px 18px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-.hero form{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+  }
+  .hero form {
     background-color: white;
     padding: 14px;
     border-radius: 34px;
-}
-.hero input:focus{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .hero form ion-icon {
+    color: rgb(107, 114, 128);
+    font-size: 20px;
+  }
+  .hero input {
+    width: 100%;
+    border: none;
+  }
+  .hero input:focus {
     outline: none;
-}
-.hero input::placeholder{
+  }
+  .hero input::placeholder {
     color: rgb(107, 114, 128);
     font-size: 18px;
-}
-.hero nav a{
-    color: white;
-    font-size: 13px;
-
-}
-.hero nav a:hover{
+  }
+  .hero nav a {
     color: white;
     text-align: center;
-}
-.hero nav img{
+    font-size: 13px;
+  }
+  .hero nav a:hover {
+    color: white;
+  }
+  .hero nav img {
     display: block;
     margin: 0 auto;
-}
-.action{
-
+  }
+  
+  .action {
     color: white;
     padding-bottom: 80px;
     padding-left: 30px;
     padding-right: 30px;
-}
-.action .with-bg{background-image: url(images/banner-1.jpg);
+  }
+  .action .with-bg {
+    background-image: url("./images/banner-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     overflow: hidden;
-    padding: 17px;
-}
-.action .cta{
+  }
+  .action .cta {
     display: flex;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.591);
-    padding: 10px 18px;
-}
-.cta p{
+    padding: 8px 18px;
+  }
+  .cta p {
     font-size: 22px;
-}
-.action h2{
-    margin: 50px 20px;   
-}
-.cta a{
+  }
+  .action h2 {
+    margin: 50px 30px;
+  }
+  .cta a {
     text-decoration: none;
     margin-right: 30px;
-}
-@media(max-width:1023px;){
-    .desktop-nav, .user-nav{
-        display: none;
+  }
+  
+  /* sections -- agencies */
+  .agencies {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .agencies-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .agencies-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .agencies-body > a {
+    border: 1px solid rgb(107, 114, 128);
+    border-radius: 7px;
+    color: rgb(107, 114, 128);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    width: 30%;
+  }
+  .card-head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(107, 114, 128);
+  }
+  .card-head img {
+    height: 35px;
+  }
+  /* section- counties */
+  .counties {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .counties-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .counties-container > a {
+    border: 1px solid rgb(107, 114, 128);
+    color: rgb(107, 114, 128);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    border-radius: 7px;
+    padding: 10px;
+  }
+  .counties-container h2 {
+    font-size: 20px;
+  }
+  
+  /* advantages section */
+  
+  .advantages {
+    background-color: rgb(243, 244, 246);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 70px;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+  .advantages > p {
+    width: 40%;
+    word-spacing: 8px;
+    line-height: 30px;
+  }
+  .reasons-container {
+    display: flex;
+    gap: 16px;
+    margin: 40px 0px;
+  }
+  
+  /* MEDIA QUERIES -- responsive */
+  @media (max-width: 1023px) {
+    .reasons-container {
+      flex-direction: column;
     }
-    #mobile-menu-btn{
-        display: block;
+    .reasons-container .reason {
+      width: 50%;
     }
-    #mobile-menu-btn ion-icon{
-        color: rgb(107, 114, 128);
-        font-size: 30px;
+    .desktop-nav,
+    .user-nav {
+      display: none;
     }
-        }
-@media(max-width:540px){
-    #main-logo{
-        display: none;
+  
+    #mobile-menu-btn {
+      display: block;
     }
-    #mobile-logo{
-        display: block;
-        height: 55px;
+    #mobile-menu-btn ion-icon {
+      color: rgb(107, 114, 128);
+      font-size: 30px;
     }
-}
-    
- 
-
+    .agencies-body > a {
+      width: 46%;
+    }
+    .counties-container > a {
+      width: 46%;
+    }
+  }
+  
+  @media (max-width: 540px) {
+    #main-logo {
+      display: none;
+    }
+    #mobile-logo {
+      display: block;
+      height: 55px;
+    }
+    .agencies-body > a {
+      width: 96%;
+    }
+    .reasons-container .reason {
+      width: 95%;
+    }
+    .advantages > p {
+      width: 100%;
+    }
+    .counties-container > a {
+      width: 96%;
+    }
+    .hero nav {
+      overflow-x: hidden;
+    }
+  }
